@@ -1,0 +1,20 @@
+{
+    "name": "zxq/runapi",
+    "description": "make a package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zxq",
+            "email": "395511648@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "src\\" : "src",
+            "command\\" : "src/command"
+        }
+    }
+}
