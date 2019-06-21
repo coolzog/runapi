@@ -540,7 +540,6 @@ class Console
 
         $allCommands = array_keys($this->commands);
         $commands    = preg_grep('{^' . $expr . '}', $allCommands);
-
         if (empty($commands) || count(preg_grep('{^' . $expr . '$}', $commands)) < 1) {
             if (false !== ($pos = strrpos($name, ':'))) {
                 $this->findNamespace(substr($name, 0, $pos));

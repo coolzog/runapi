@@ -1,8 +1,16 @@
 #!/usr/bin/env php
 <?php
+namespace zxq;
 
-// 定义项目路径
-define('APP_PATH', __DIR__ . '/src/');
+class RunApi
+{
+    public static function run()
+    {
+        // 定义项目路径
+        define('APP_PATH', __DIR__ . '/src/');
+        require __DIR__ . './src/thinkphp/base.php';
 
-// 加载框架引导文件
-require './src/thinkphp/console.php';
+        \think\App::initCommon();
+        \think\Console::init();
+    }
+}
